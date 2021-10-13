@@ -3,13 +3,17 @@ public class Start {
         Random r = new Random();
         int n = r.nextInt(11);
         System.out.println("wylosowana liczba: " + n);
-        for(int i=0; i<=n; i++)
+        int[] tab = new int[n];
+        System.out.println("nasza tablica z 0-wym indekcem na koncu: ");
+        for(int i=0; i<n; i++)
         {
-           if(i != 0)
-           {
-               System.out.println(i);
-           }
+           tab[i] = i;
+            if(tab[i]!=0)
+            {
+                System.out.println(tab[i]);
+            }
         }
-        System.out.println(0);
+        System.out.println(tab[0]);
+
     }
 }
