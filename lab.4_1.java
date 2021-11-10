@@ -45,17 +45,15 @@ public class Start {
 //c
 public class Start {
 
-    public static int middle(String str)
+    public static char middle(String str)
     {
         int len = str.length();
         if(len%2==0){
             int a = len/2;
-            for(int i=a+1; i>a-1; i--){
-                return str.charAt(i);
-            }
+            return str.charAt(a);
         }
         float b = (float) ((len/2) + 0.5);
-        return str.charAt((int) b);
+        return str.charAt((int)b);
     }
 
     public static void main(String[] args) {
