@@ -62,3 +62,19 @@ public class Start {
     }
 }
 //d
+public class Start
+{
+    public static char repeat(String str, int n)
+    {
+        for (int i=0; i<n; i++)
+        {
+            System.out.println(str);
+        }
+        return 0;
+    }
+    public static void main(String[] args)
+    {
+        repeat("ho", 3);
+    }
+}
+//e
