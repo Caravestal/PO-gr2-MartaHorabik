@@ -1,18 +1,15 @@
 package pl.edu.uwm.obiektowe.s155065.kolo1;
-import java.time.LocalDate;
 
-class TestOsoba
-{
+public class Main {
+
     public static void main(String[] args)
     {
-        Osoba[] ludzie = new Osoba[2];
-
-        ludzie[0] = new Pracownik("Kowalski","Jan", LocalDate.parse("2000-10-11"), true, 50000, LocalDate.parse("2045-12-25"));
-        ludzie[1] = new Student("Nowak", "Małgorzata", LocalDate.parse("1999-20-11"), false, "Informatyka", 4.9);
-        // ludzie[2] = new Osoba("Dyl Sowizdrzał");
-
-        for (Osoba p : ludzie) {
-            System.out.println(p.getNazwisko() + ": " + p.getOpis());
-        }
+	    Adres a = new Adres("Lipowa", 13, 85, "Elk", "78-345");
+        a.pokaz();
+        System.out.println(a.przed("10-687"));
+        Student s = new Student("Kowalski", 2001, "Informatyka");
+        BetterRectangle xyz = new BetterRectangle(1,1,4,5);
+        System.out.println(xyz.getArea());
+        System.out.println(xyz.getParimeter());
     }
 }
