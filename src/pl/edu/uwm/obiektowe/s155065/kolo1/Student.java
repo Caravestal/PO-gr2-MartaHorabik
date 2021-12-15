@@ -1,12 +1,17 @@
 package pl.edu.uwm.obiektowe.s155065.kolo1;
+import java.time.LocalDate;
 
-public class Student extends Osoba
+class Student extends Osoba
 {
     private String kierunek;
-    public Student(String nazwisko, int rokUrodzenia, String k)
+    private double sredniaOcen;
+    public Student(String nazwisko, String imie, LocalDate dataUrodzenia, boolean plec, String kierunek, double sredniaOcen)
     {
-        super(nazwisko, rokUrodzenia);
-        this.kierunek = k;
+        super(nazwisko, imie, dataUrodzenia, plec);
+        this.kierunek = kierunek;
+        this.sredniaOcen = sredniaOcen;
     }
-    public String getKirunek(){return this.kierunek;}
+
+    public String getOpis() {return "kierunek studiów: " + kierunek;}
+    public String getSredniaOcen(){return ("srednia ocen: " + sredniaOcen);}
 }
